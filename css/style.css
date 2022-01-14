@@ -56,11 +56,25 @@ a {
     padding: 0 10px;
 }
 
-button {
+.title {
+    font-family: 'Space Age Cyrillic';
+    font-size: 48px;
+    line-height: 48px;
+    padding: 100px 0;
+    font-weight: 400;
+}
+
+.button {
     border: none;
     background-color: transparent;
     cursor: pointer;
     color: inherit;
+    padding: 20px 45px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    transition: all .4s linear;
 }
 
 #btn:hover {
@@ -68,6 +82,7 @@ button {
     color: black;
     border: 1px solid #000;
     box-shadow: inset 0 0 30px 10px #000;
+    border-radius: 15px;
 }
 
 /*1 block*/
@@ -118,6 +133,9 @@ button {
     color:#CB0E0E;
 }
 .login {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     margin-right: 134px;
     transition: .5s ease-in-out;
 }
@@ -167,4 +185,78 @@ button {
 }
 .header__description-text + .header__description-text { 
     margin-left: 52px; /*только следующему элементу (соседям) (кроме первого элемента)*/
+}
+
+/*2 block*/
+.about {
+    background-image: url(../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.about__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*перепрыгивание блока на след строку при малом экране*/
+    padding-bottom: 150px;
+}
+.about__item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.about__img {
+    max-width: 100%;
+}
+.about__content {
+    width: 600px;
+}
+.about__content-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 5px;
+}
+.about__content-subtitle {
+    color: #036CCA;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 31px;
+}
+.about__content-text {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.about__content-text p {
+    width: 165px;
+}
+.about__content-table {
+    margin-bottom: 50px;
+}
+.about__content-table-tr {
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+.about__content-table-tr + .about__content-table-tr { /*все, кроме первой строки*/
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+.about__content-table-td {
+    padding: 10px 30px 10px 0;
+}
+.about__content-table-td span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+}
+.about__content-table-caption {
+    caption-side: bottom;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 12px;
 }
