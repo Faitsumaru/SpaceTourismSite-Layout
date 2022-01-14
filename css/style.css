@@ -293,3 +293,28 @@ foreignObject {
 foreignObject {
     text-align: left;
 }
+
+/*4 block*/
+.booking {
+    background-image: url(../images/booking-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh; /*блок на весь экран*/
+}
+.booking__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.booking__description {
+    margin-top: 100px;
+    display: flex;
+}
+.booking__description-text {
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.booking__description-text + .booking__description-text {
+    margin-left: 53px;
+}
