@@ -497,3 +497,58 @@ foreignObject {
     line-height: 30px;
     text-align: center;
 }
+
+/*6 block*/
+.contacts-guarantees {
+    background-color: #010203;
+    padding-bottom: 100px;
+}
+.contacts-guarantees__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__box {
+    width: 500px;
+}
+.contacts__box > .title,
+.guarantees__box > .title {
+    padding-bottom: 46px;
+}
+.contacts__text {
+    padding-bottom: 85px;
+    font-size: 24px;
+    line-height: 29px;
+}
+.guarantees__text {
+    font-size: 24px;
+    line-height: 29px;
+}
+.contacts__form {
+    flex-direction: column;
+    display: flex;
+}
+.contacts__form-item {
+    margin-bottom: 50px;
+}
+.contacts__form-item {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+}
+.guarantees__box {
+    max-width: 600px;
+}
+.guarantees__img-box {
+    text-align: right;
+}
+.guarantees__img-elon {
+    padding-top: 15px;
+}
+.contacts__form input::placeholder {
+    color:#fff;
+    opacity: 0.7;
+}
