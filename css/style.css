@@ -354,9 +354,6 @@ foreignObject {
 .offers__item-text span {
     color: #CB0E0E;
 }
-.offers__item-price {
-
-}
 .offers__item-old_price {
     color: #E5E5E5;
     font-size: 14px;
@@ -440,4 +437,63 @@ foreignObject {
     background-image: url(../images/services-img.png);
     width: 192px;
     height: 150px;
+}
+
+.slider__box {
+    border: 1px solid #fff;
+    margin-bottom: 50px;
+}
+.slider__box-img {
+    padding: 100px 200px;
+}
+.slider-prev,
+.slider-next {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.slider-prev:hover,
+.slider-next:hover {
+    opacity: .7;
+}
+.slider-prev {
+    left: 5%;
+    top: 50%;
+}
+.slider-next {
+    right: 5%;
+    top: 50%;
+}
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 370px;
+}
+.slick-dots button {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    opacity: 0.7;
+}
+.slick-active button {
+    background-color: #CB0E0E;
+}
+.slider__text {
+    font-family: 'Space Age Cyrillic';
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
 }
