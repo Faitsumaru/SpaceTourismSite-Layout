@@ -1,5 +1,6 @@
 $(function(){
 
+    //slider
     $('.slider__box').slick({
         dots: true,
         slidesToShow: 1,
@@ -13,7 +14,11 @@ $(function(){
         fade: true
     });
 
-
+    //burger
+    $('.menu-btn').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active'); //btn click list appearance
+        $('.menu-btn').toggleClass('menu-btn--active'); //btn click animation
+    });
 
 
 });

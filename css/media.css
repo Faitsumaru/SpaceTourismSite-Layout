@@ -1,0 +1,117 @@
+/*Adaptive Layout*/
+
+/*additionally for adaptive: (burger)*/
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    height: 30px;
+}
+.menu-btn span {
+    display: block;
+    height: 3px;
+    width: 45px;
+    position: relative;
+    background-color: #efefef;
+    transition: .6s ease-in-out;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: #efefef;
+    left: 0;
+    transition: .6s ease-in-out;
+}
+.menu-btn span::before {
+    top: -15px;
+}
+.menu-btn span::after {
+    top: 15px;
+}
+.menu-btn:hover {
+    cursor: pointer;
+}
+.menu-btn--active span {
+    transition: .6s ease-in-out;
+    background-color: transparent;
+}
+.menu-btn--active span::before,
+.menu-btn--active span::after {
+    top: 0;
+    transition: .6s ease-in-out;
+    background-color: #efefef;
+}
+.menu-btn--active span::before {
+    transform: rotate(45deg);
+}
+.menu-btn--active span::after {
+    transform: rotate(-45deg);
+}
+/*---*/
+
+@media (max-width: 1024px) {
+    /*1 block*/
+    .login {
+        margin-right: 0;
+    }
+}
+@media (max-width: 900px) {
+    /*1 block*/
+    .header__top {
+        padding-top: 30px;
+    }
+    .menu__list {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-150%);
+        background-color: #010203;
+        padding-top: 90px;
+        padding-bottom: 25px;
+        width: 250px;
+        min-height: 100vh;
+        text-align: center;
+        border-radius: 5%;
+        opacity: .93;
+        transition: .7s linear;
+    }
+    .menu__list--active {
+        transform: translateX(0);
+    }
+    .menu__item {
+        margin: 0;
+    }
+    .menu__item a {
+        padding: 15px 0;
+    }
+    .menu__item:hover {
+        background-color: #CB0E0E;
+    }
+    .menu__link {
+        display: block;
+        transition: .3s ease-in-out;
+        height: 50px;
+    }
+    .menu__link:hover {
+        font-weight: 700;
+        font-size: 20px;
+        opacity: 1;
+        color: #fff;
+        padding-bottom: 0;
+        border: 0;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .phone,
+    .login {
+        z-index: 20;
+    }
+}
