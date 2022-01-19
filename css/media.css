@@ -75,6 +75,21 @@
     .services {
         padding-bottom: 100px;
     }
+    /*6 block*/
+    .contacts-guarantees__inner {
+        display: block;
+    }
+    .contacts__box,
+    .guarantees__box {
+        margin: 0 auto;
+    }
+    .contacts__box > .title {
+        padding-top: 10px;
+    }
+    .contacts__box,
+    .guarantees__box {
+        max-width: 800px;
+    }
 }
 @media (max-width: 1152px) {
     /*2 block*/
@@ -150,7 +165,7 @@
         bottom: 5%;
     }
     .slider-prev img, .slider-next img {
-        width: 70%;
+        width: 60%;
     }
     .slider-prev {
         left: 0;
@@ -221,10 +236,10 @@
         padding: 30px 82px;
     }
     .slider-prev {
-        left: -16px;
+        left: -10px;
     }
     .slider-next {
-        right: -16px;
+        right: -10px;
     }
     .slick-dots button {
         bottom: 2%;
@@ -235,6 +250,11 @@
     .slick-dots button {
         width: 3px;
         height: 10px;
+    }
+    /*7 block*/
+    .footer__inner {
+        justify-content: center;
+        padding: 30px 0 110px;
     }
 }
 @media (max-width: 800px) {
@@ -306,6 +326,10 @@
     .services__box-list {
         font-size: 19px;
         line-height: 29px;
+    }
+    /*7 block*/
+    .footer__text {
+        display: none;
     }
 }
 @media (max-width: 620px) {
@@ -520,6 +544,16 @@
         font-size: 30px;
         line-height: 38px;
     }
+    /*6 block*/
+    .contacts__text,
+    .guarantees__text {
+        padding-bottom: 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .contacts__form-item {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 430px) {
     /*1 block*/
@@ -552,6 +586,11 @@
     }
     .services__list-title {
         margin-bottom: 15px;
+    }
+    /*6 block*/
+    .guarantees__img-elon {
+        padding: 0;
+        max-width: 100%;
     }
 }
 @media (max-width: 410px) {
@@ -589,6 +628,10 @@
         font-size: 27px;
         line-height: 37px;
     }
+    /*7 block*/
+    .footer-menu {
+        margin-right: 25px;
+    }
 }
 @media (max-width: 370px) {
     .title {
@@ -607,6 +650,14 @@
         font-size: 25px;
         line-height: 30px;
         padding-top: 50px;
+    }
+    /*6 block*/
+    .contacts__form-item {
+        font-size: 12px;
+    }
+    .contacts__text, .guarantees__text {
+        font-size: 15px;
+        line-height: 21px;
     }
 }
 @media (max-width: 350px) {
@@ -652,6 +703,29 @@
     }
     .services__btn:first-child::before {
         bottom: 25px;
+    }
+    /*6 block*/
+    .contacts__form .button {
+        margin: 0 auto;
+    }
+    .contacts-guarantees {
+        padding-bottom: 50px;
+    }
+    /*7 block*/
+    .footer__inner {
+        padding: 0 0 40px;
+        display: block;
+        text-align: center;
+    }
+    .footer-menu {
+        margin-right: 0;
+        grid-gap: 10px;
+    }
+    .menu__item-f:last-child {
+        padding-bottom: 30px;
+    }
+    .footer__links-item {
+        padding-bottom: 10px;
     }
 }
 @media (max-width: 300px) {

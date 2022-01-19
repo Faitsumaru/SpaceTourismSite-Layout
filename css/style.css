@@ -110,13 +110,15 @@ a {
 .menu__item {
     margin-right: 30px;
 }
-.menu__link {
+.menu__link,
+.menu__link-f {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 21px;   
     transition: color .6s linear;
 }
-.menu__link:hover {
+.menu__link:hover,
+.menu__link-f:hover {
     color: #CB0E0E;   
     padding-bottom: 2px;
     border-bottom: 1px solid #CB0E0E;
@@ -511,7 +513,7 @@ foreignObject {
     flex-wrap: wrap;
 }
 .contacts__box {
-    width: 500px;
+    max-width: 500px;
 }
 .contacts__box > .title,
 .guarantees__box > .title {
