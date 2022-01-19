@@ -71,6 +71,10 @@
         justify-content: center;
         padding-bottom: 25px;
     }
+    /*5 block*/
+    .services {
+        padding-bottom: 100px;
+    }
 }
 @media (max-width: 1152px) {
     /*2 block*/
@@ -83,6 +87,31 @@
     .about__img {
         border-radius: 20px;
         max-width: 70%;
+    }
+}
+@media (max-width: 1100px) {
+    /*5 block*/
+    .offers__item + .offers__item {
+        margin-left: 5px;
+    }
+    .services {
+        padding-bottom: 80px;
+    } 
+    .services__inner {
+        display: block;
+    }
+    .services__box-list {
+        padding-bottom: 150px;
+        margin: 0 auto;
+    }
+    .services__buttons {
+        margin: 0 auto;
+    }
+    .services__btn:first-child {
+        margin-bottom: 20px;
+    }
+    .slider__box-img {
+        padding: 75px 180px;
     }
 }
 @media (max-width: 1024px) {
@@ -112,6 +141,22 @@
     }
     .booking__description-text:last-child {
         margin-right: 10px;
+    }
+    /*5 block*/
+    .slider__box-img {
+        padding: 50px 100px;
+    }
+    .slick-dots button {
+        bottom: 5%;
+    }
+    .slider-prev img, .slider-next img {
+        width: 70%;
+    }
+    .slider-prev {
+        left: 0;
+    }
+    .slider-next {
+        right: 0;
     }
 }
 @media (max-width: 900px) {
@@ -171,6 +216,37 @@
     .how-to-occur__box svg {
         width: 100%;
     }
+    /*5 block*/
+    .slider__box-img {
+        padding: 30px 82px;
+    }
+    .slider-prev {
+        left: -16px;
+    }
+    .slider-next {
+        right: -16px;
+    }
+    .slick-dots button {
+        bottom: 2%;
+    }
+    .slick-dots {
+        padding: 0px 285px;
+    }
+    .slick-dots button {
+        width: 3px;
+        height: 10px;
+    }
+}
+@media (max-width: 800px) {
+    /*5 block*/
+    .offers__item-new_price {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .offers__item-text {
+        font-size: 19px;
+        line-height: 34px;
+    }
 }
 @media (max-width: 750px) {
     /*3 block*/
@@ -179,6 +255,31 @@
     }
     .how-to-occur .title {
         padding-bottom: 0;
+    }
+}
+@media (max-width: 700px) {
+    /*5 block*/
+    .offers__item-new_price {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .offers__item-text {
+        font-size: 19px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .offers__item button {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .slick-dots button {
+        bottom: 4%;
+    }
+    .slick-dots {
+        padding: 0px 180px;
+    }
+    .slick-dots button {
+        height: 5px;
     }
 }
 @media (max-width: 630px) {
@@ -196,15 +297,25 @@
     .about__content-table-td {
         padding: 10px 18px 10px 0px;
     }
+    /*5 block*/
+    .services .title,
+    .offers .title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .services__box-list {
+        font-size: 19px;
+        line-height: 29px;
+    }
 }
 @media (max-width: 620px) {
     /*1 block*/
     .header__title {
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 48px;
+        line-height: 48px;
     }
     .header__title span {
-        font-size: 91px;
+        font-size: 87px;
     }
     .header__text {
         font-size: 20px;
@@ -227,12 +338,42 @@
     .how-to-occur__box svg {
         height: 90%;
     }
+    /*5 block*/
+    .offers__inner {
+        display: block;
+    }
+    .offers__item {
+        width: 400px;
+        min-height: 0;
+        margin: 0 auto;
+    }
+    .offers__item + .offers__item {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .offers__item-box {
+        height: 50%;
+        margin-bottom: 10px;
+    }
+    .slider__box-img {
+        padding: 0px 0px;
+    }
+    .slick-dots button {
+        bottom: 2%;
+    }
+    .slick-dots {
+        padding: 0px 150px;
+    }
 }
 @media (max-width: 590px) {
     /*4 block*/
     .booking__inner .title {
         font-size: 40px;
         line-height: 40px;
+    }
+    /*5 block*/
+    .services__buttons {
+        width: 100%;
     }
 }
 @media (max-width: 560px) {
@@ -260,7 +401,32 @@
     .about__content-table {
         margin-bottom: 30px;
     }
-
+    /*5 block*/
+    .services {
+        padding-bottom: 30px;
+    }
+    .services .title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .slider__box {
+        border: 1px solid #fff;
+        margin-bottom: 20px;
+    }
+    .slider__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .services__btn {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .services__btn:first-child::before {
+        bottom: 37px;
+    }
+    .info {
+        padding-bottom: 50px;
+    }
 }
 @media (max-width: 500px) {
     /*1 block*/
@@ -318,6 +484,17 @@
         font-size: 35px;
         line-height: 35px;
     }
+    /*5 block*/
+    .services__box-list {
+        font-size: 17px;
+        line-height: 27px;
+    }
+    .services__list-item::before {
+        width: 15px;
+        height: 15px;
+        left: 7px;
+        bottom: 6px;
+    }
 }
 @media (max-width: 470px) {
     .title {
@@ -336,6 +513,45 @@
     .booking__inner .title {
         font-size: 30px;
         line-height: 30px;
+    }
+    /*5 block*/
+    .services .title, 
+    .offers .title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+@media (max-width: 430px) {
+    /*1 block*/
+    .header__title {
+        font-size: 39px;
+        line-height: 39px;
+    }
+    .header__title span {
+        font-size: 71px;
+    }
+    /*5 block*/
+    .offers__item {
+        width: 285px;
+    }
+    .offers__item-box {
+        padding: 15px 20px;
+    }
+    .slick-dots {
+        padding: 0px 100px;
+    }
+    .services__list-item {
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    .services__list-item::before {
+        width: 10px;
+        height: 10px;
+        left: 0px;
+        bottom: 8px;
+    }
+    .services__list-title {
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 410px) {
@@ -368,6 +584,11 @@
     .booking__description-text + .booking__description-text {
         margin-left: 0;
     }
+    /*5 block*/
+    .services .title {
+        font-size: 27px;
+        line-height: 37px;
+    }
 }
 @media (max-width: 370px) {
     .title {
@@ -380,6 +601,12 @@
     }
     .about__item {
         padding-bottom: 50px;
+    }
+    /*5 block*/
+    .services .title {
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 50px;
     }
 }
 @media (max-width: 350px) {
@@ -411,6 +638,21 @@
         font-size: 23px;
         line-height: 23px;
     }
+    /*5 block*/ 
+    .offers__item {
+        width: 220px;
+    }
+    .offers .title,
+    .services .title {
+        font-size: 23px;
+        line-height: 23px;
+    }
+    .services__buttons {
+        text-align: center;
+    }
+    .services__btn:first-child::before {
+        bottom: 25px;
+    }
 }
 @media (max-width: 300px) {
     /*1 block*/
@@ -422,5 +664,11 @@
     /*2 block*/
     .about__content-table-tr:last-child {
         font-size: 30px;
+    }
+    /*5 block*/
+    .services .title {
+        font-size: 21px;
+        line-height: 29px;
+        padding-top: 50px;
     }
 }
