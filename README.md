@@ -1,4 +1,4 @@
-# **Space Tourism Site**
+# ***Space Tourism Site***
 
 This is 'Space Tourism' site layout (HTML, CSS & jQuery) + adaptive layout!
 
